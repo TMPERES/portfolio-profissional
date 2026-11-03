@@ -34,8 +34,8 @@ export default function Specialties({ onSelectCategory }: SpecialtiesProps) {
     },
     {
       id: 'dev_web' as ProjectCategory,
-      title: 'Desenvolvimento Web Júnior',
-      level: 'Conhecimento em desenvolvimento contínuo',
+      title: 'DEV',
+      level: 'Estou sempre em busca de evolução profissional, me dedicando ao aprendizado contínuo de novas ferramentas de programação e inteligência artificial.',
       icon: Code,
       description: 'Construção de interfaces modernas com HTML5, CSS3, JavaScript, TypeScript e React. Aplicação de boas práticas de estruturação de código e responsividade.',
       deliverables: ['Desenvolvimento com React', 'Integração de APIs', 'Código limpo & tipado', 'Componentização reutilizável'],
