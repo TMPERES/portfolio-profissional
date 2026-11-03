@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Background Museum Gradients -->
+    <radialGradient id="skyLight" cx="22%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#13C8F5" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#087BFF" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#08295A" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#020713" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="warmWall" cx="20%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#C84814" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#8A300C" stop-opacity="0.6"/>
+      <stop offset="75%" stop-color="#06162B" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020713" stop-opacity="1"/>
+    </radialGradient>
+
+    <radialGradient id="warmWallRight" cx="58%" cy="38%" r="40%">
+      <stop offset="0%" stop-color="#A5380C" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#06162B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#020713" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Stone Texture Gradients -->
+    <linearGradient id="stoneLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2F3F0"/>
+      <stop offset="35%" stop-color="#D9DDD8"/>
+      <stop offset="75%" stop-color="#A6ABA4"/>
+      <stop offset="100%" stop-color="#7B8079"/>
+    </linearGradient>
+
+    <linearGradient id="stoneMedium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A6ABA4"/>
+      <stop offset="50%" stop-color="#7B8079"/>
+      <stop offset="100%" stop-color="#4C504A"/>
+    </linearGradient>
+
+    <linearGradient id="stoneDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#555853"/>
+      <stop offset="50%" stop-color="#363935"/>
+      <stop offset="100%" stop-color="#1E201E"/>
+    </linearGradient>
+
+    <linearGradient id="stoneHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#D9DDD8" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Glow Backlight Filters -->
+    <filter id="cyanGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+    </filter>
+    <filter id="rimGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Base Background -->
+  <rect width="1920" height="1080" fill="#020713"/>
+
+  <!-- Museum Wall Accents -->
+  <rect x="0" y="0" width="1370" height="720" fill="url(#warmWall)"/>
+  <rect x="1000" y="50" width="600" height="600" fill="url(#warmWallRight)"/>
+
+  <!-- Museum Skylights / Architectural Beams -->
+  <g opacity="0.25">
+    <polygon points="120,0 140,0 330,320 310,320" fill="#13C8F5"/>
+    <polygon points="390,0 410,0 600,320 580,320" fill="#13C8F5"/>
+    <polygon points="660,0 680,0 870,320 850,320" fill="#13C8F5"/>
+  </g>
+  <circle cx="420" cy="180" r="450" fill="url(#skyLight)"/>
+
+  <!-- Gallery Paintings on Walls -->
+  <g opacity="0.35">
+    <!-- Left paintings -->
+    <rect x="70" y="260" width="90" height="110" fill="#181210" stroke="#FF7900" stroke-opacity="0.45" stroke-width="2"/>
+    <rect x="80" y="270" width="70" height="90" fill="#903D14"/>
+    <rect x="1100" y="280" width="70" height="100" fill="#201510" stroke="#FF7900" stroke-opacity="0.4" stroke-width="2"/>
+    <rect x="1110" y="290" width="50" height="80" fill="#753010"/>
+  </g>
+
+  <!-- Polished Museum Concrete Floor with Reflections -->
+  <path d="M 0,690 L 1920,690 L 1920,1080 L 0,1080 Z" fill="#050C1A"/>
+  <!-- Specular Reflections on the floor on the Left -->
+  <ellipse cx="400" cy="790" rx="360" ry="85" fill="#13C8F5" opacity="0.18"/>
+  <ellipse cx="400" cy="740" rx="220" ry="50" fill="#FF7900" opacity="0.14"/>
+  <ellipse cx="400" cy="880" rx="420" ry="110" fill="#08295A" opacity="0.3"/>
+
+  <!-- ============================================================== -->
+  <!-- BUSTO ESCULTURA COMPLETA + BASE COM LETTERING 3D               -->
+  <!-- Posicionado no lado ESQUERDO: y=100 até y=725 (100% visível)  -->
+  <!-- ============================================================== -->
+  <g id="sculpture-assembly" transform="translate(240, 100)">
+    
+    <!-- 1. Aura de Luz Azul Elétrica / Ciano Atrás do Busto -->
+    <circle cx="160" cy="180" r="240" fill="#13C8F5" opacity="0.45" filter="url(#cyanGlow)"/>
+    <circle cx="160" cy="270" r="170" fill="#087BFF" opacity="0.5" filter="url(#cyanGlow)"/>
+
+    <!-- 2. Cabeça da Escultura Clássica (Mármore Cinzelado) -->
+    <!-- Cabelos cacheados e coroa de cachos clássicos -->
+    <path d="M 90,135 C 75,70 120,25 160,20 C 205,15 240,55 230,120 C 245,140 230,205 218,235 C 208,265 140,285 110,245 C 92,210 85,165 90,135 Z" fill="url(#stoneLight)"/>
+    
+    <!-- Cachos e relevo do cabelo -->
+    <path d="M 105,70 C 120,45 150,38 170,45 C 190,52 215,65 220,95 C 225,125 210,140 215,160 C 205,150 195,120 180,105 C 165,90 135,95 120,80 C 110,75 105,70 105,70 Z" fill="url(#stoneHighlight)"/>
+    <circle cx="125" cy="55" r="16" fill="url(#stoneMedium)"/>
+    <circle cx="155" cy="42" r="18" fill="url(#stoneLight)"/>
+    <circle cx="185" cy="50" r="17" fill="url(#stoneMedium)"/>
+    <circle cx="212" cy="75" r="16" fill="url(#stoneDark)"/>
+    <circle cx="225" cy="110" r="15" fill="url(#stoneMedium)"/>
+    <circle cx="95" cy="100" r="15" fill="url(#stoneDark)"/>
+
+    <!-- Rosto, Nariz esculpido e Barba volumosa clássica -->
+    <path d="M 125,145 L 140,165 L 128,172 Z" fill="url(#stoneLight)"/>
+    <!-- Nariz grego -->
+    <polygon points="152,120 162,158 148,160" fill="url(#stoneHighlight)"/>
+    <polygon points="152,120 162,158 165,155" fill="url(#stoneDark)"/>
+    
+    <!-- Barba esculpida encorpada -->
+    <path d="M 100,165 C 80,225 105,295 160,305 C 210,295 230,225 210,165 C 195,215 125,215 100,165 Z" fill="url(#stoneDark)"/>
+    <!-- Ondas da barba -->
+    <path d="M 115,200 C 125,245 150,285 160,295 C 170,285 195,245 205,200 C 185,240 135,240 115,200 Z" fill="url(#stoneMedium)"/>
+    <path d="M 135,220 C 145,255 155,275 160,285 C 165,275 175,255 185,220 Z" fill="url(#stoneLight)"/>
+
+    <!-- 3. Óculos Escuros Modernos (Elemento Icônico de Destaque) -->
+    <g id="sunglasses">
+      <!-- Sombra dos óculos no rosto -->
+      <path d="M 108,128 Q 160,118 212,128 L 210,158 Q 160,152 108,158 Z" fill="#020713" opacity="0.6"/>
+      
+      <!-- Armação preta brilhante com borda azul ciano neon -->
+      <!-- Lente Esquerda -->
+      <path d="M 112,126 Q 148,120 152,135 Q 150,162 120,162 Q 108,145 112,126 Z" fill="#020713" stroke="#13C8F5" stroke-width="2.5"/>
+      <!-- Lente Direita -->
+      <path d="M 166,133 Q 204,122 210,138 Q 206,164 178,164 Q 164,148 166,133 Z" fill="#020713" stroke="#13C8F5" stroke-width="2.5"/>
+      <!-- Ponte nasal -->
+      <line x1="151" y1="134" x2="167" y2="135" stroke="#13C8F5" stroke-width="3.5" stroke-linecap="round"/>
+      
+      <!-- Linhas de reflexo azul ciano e laranja nas lentes -->
+      <line x1="118" y1="133" x2="140" y2="155" stroke="#13C8F5" stroke-width="2.5" stroke-linecap="round" opacity="0.95"/>
+      <line x1="124" y1="130" x2="132" y2="138" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+      <line x1="174" y1="136" x2="198" y2="157" stroke="#13C8F5" stroke-width="2.5" stroke-linecap="round" opacity="0.95"/>
+      <line x1="180" y1="133" x2="188" y2="141" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Sutileza laranja de reflexo da parede da galeria -->
+      <line x1="136" y1="154" x2="146" y2="159" stroke="#FF7900" stroke-width="1.5" opacity="0.8"/>
+      <line x1="194" y1="156" x2="204" y2="161" stroke="#FF7900" stroke-width="1.5" opacity="0.8"/>
+    </g>
+
+    <!-- 4. Ombros e Manto Romano Clássico (Drapeado) -->
+    <path d="M 80,265 C 45,305 10,345 -20,380 L 340,380 C 310,345 275,305 240,265 Z" fill="url(#stoneLight)"/>
+    <!-- Pregas do manto romano -->
+    <path d="M 75,268 C 85,325 220,325 245,268 L 260,345 L 60,345 Z" fill="url(#stoneDark)" opacity="0.45"/>
+    <path d="M -20,380 Q 80,340 160,345 Q 240,340 340,380 Z" fill="url(#stoneMedium)"/>
+    <!-- Linhas de luz no mármore do ombro esquerdo e direito -->
+    <path d="M -15,378 C 30,340 70,305 90,270" stroke="#13C8F5" stroke-width="3" fill="none" opacity="0.75" filter="url(#rimGlow)"/>
+    <path d="M 335,378 C 290,340 250,305 230,270" stroke="#FF7900" stroke-width="2.5" fill="none" opacity="0.6"/>
+
+    <!-- ============================================================== -->
+    <!-- 5. BASE PEDESTAL 3D COM LETTERING: "TÁ PENSANDO O QUE?"       -->
+    <!-- Posicionado de y=375 até y=640 no grupo local                  -->
+    <!-- ============================================================== -->
+    <g id="pedestal-3d" transform="translate(0, 375)">
+      
+      <!-- Topo do bloco de apoio superior -->
+      <polygon points="5,0 315,0 335,22 -15,22" fill="#D9DDD8"/>
+      <line x1="-15" y1="22" x2="335" y2="22" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="-15" y="22" width="350" height="15" fill="url(#stoneMedium)"/>
+
+      <!-- Linha 1 de Letras 3D: "TÁ" -->
+      <g font-family="Impact, Arial Black, sans-serif" font-weight="900" font-size="76">
+        <!-- Extrusão de profundidade lateral -->
+        <text x="66" y="98" fill="#1E201E">TÁ</text>
+        <text x="70" y="94" fill="#363935">TÁ</text>
+        <text x="74" y="90" fill="#555853">TÁ</text>
+        <!-- Face frontal iluminada -->
+        <text x="78" y="86" fill="url(#stoneLight)" stroke="#020713" stroke-width="0.5">TÁ</text>
+      </g>
+      
+      <!-- Linha 2 de Letras 3D: "PENSANDO" -->
+      <g font-family="Impact, Arial Black, sans-serif" font-weight="900" font-size="49" letter-spacing="1">
+        <!-- Extrusão de profundidade lateral -->
+        <text x="14" y="160" fill="#1E201E">PENSANDO</text>
+        <text x="18" y="156" fill="#363935">PENSANDO</text>
+        <text x="22" y="152" fill="#555853">PENSANDO</text>
+        <!-- Face frontal iluminada -->
+        <text x="26" y="148" fill="url(#stoneLight)" stroke="#020713" stroke-width="0.5">PENSANDO</text>
+      </g>
+
+      <!-- Linha 3 de Letras 3D: "O QUE?" -->
+      <g font-family="Impact, Arial Black, sans-serif" font-weight="900" font-size="64" letter-spacing="2">
+        <!-- Extrusão de profundidade lateral -->
+        <text x="38" y="228" fill="#1E201E">O QUE?</text>
+        <text x="42" y="224" fill="#363935">O QUE?</text>
+        <text x="46" y="220" fill="#555853">O QUE?</text>
+        <!-- Face frontal iluminada -->
+        <text x="50" y="216" fill="url(#stoneLight)" stroke="#020713" stroke-width="0.5">O QUE?</text>
+      </g>
+
+      <!-- Rodapé do pedestal de pedra -->
+      <polygon points="-25,232 345,232 360,248 -40,248" fill="#7B8079"/>
+      <rect x="-40" y="248" width="400" height="14" fill="#1E201E"/>
+      <line x1="-40" y1="248" x2="360" y2="248" stroke="#13C8F5" stroke-width="2" opacity="0.6"/>
+
+      <!-- Sombra de contato e reflexo laranja no piso polido -->
+      <ellipse cx="160" cy="265" rx="210" ry="22" fill="#020713" opacity="0.95"/>
+      <ellipse cx="160" cy="270" rx="170" ry="12" fill="#FF7900" opacity="0.3" filter="url(#rimGlow)"/>
+      <ellipse cx="160" cy="278" rx="230" ry="16" fill="#13C8F5" opacity="0.25" filter="url(#cyanGlow)"/>
+    </g>
+
+  </g>
+
+  <!-- Gradiente Suave de Leitura à Direita (Preserva 100% o busto e base à esquerda) -->
+  <linearGradient id="readingFade" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#020713" stop-opacity="0"/>
+    <stop offset="30%" stop-color="#020713" stop-opacity="0"/>
+    <stop offset="42%" stop-color="#020713" stop-opacity="0.12"/>
+    <stop offset="54%" stop-color="#020713" stop-opacity="0.60"/>
+    <stop offset="68%" stop-color="#020713" stop-opacity="0.92"/>
+    <stop offset="100%" stop-color="#020713" stop-opacity="1"/>
+  </linearGradient>
+  <rect width="1920" height="1080" fill="url(#readingFade)"/>
+
+</svg>
