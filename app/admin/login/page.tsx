@@ -10,8 +10,8 @@ export default function AdminLoginPage() {
   const router = useRouter();
   const { isAdmin, signIn, resetPassword, isConfigured, loading } = useAuth();
 
-  const [email, setEmail] = useState('tadeumartinsperes@gmail');
-  const [password, setPassword] = useState('jc01*');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
@@ -105,19 +105,7 @@ export default function AdminLoginPage() {
             </p>
           </div>
 
-          {/* Destaque das Credenciais Cadastradas */}
-          <div className="mb-6 p-3.5 rounded-xl bg-[#F0FDF4] border border-[#BBF7D0] text-xs text-[#166534]">
-            <div className="flex items-center gap-2 mb-1.5">
-              <Sparkles className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span className="font-bold text-[#14532D]">Credenciais de Administrador Ativas:</span>
-            </div>
-            <div className="text-[11px] font-mono text-[#15803D] pl-6 space-y-0.5">
-              <div><span className="text-[#14532D] font-semibold">E-mail:</span> tadeumartinsperes@gmail</div>
-              <div><span className="text-[#14532D] font-semibold">Senha:</span> jc01*</div>
-            </div>
-          </div>
-
-          {/* Feedback Messages */}
+            {/* Feedback Messages */}
           {errorMsg && (
             <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200 text-xs text-red-800 flex items-start gap-2.5">
               <AlertCircle className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
@@ -143,7 +131,7 @@ export default function AdminLoginPage() {
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="tadeumartinsperes@gmail"
+                  placeholder="seu@email.com"
                   required
                   className="w-full px-4 py-3 pl-10 rounded-xl bg-[#F7F6F2] border border-[#E5E3DE] text-sm text-[#202020] placeholder-[#777777]/60 focus:outline-hidden focus:border-[#202020] transition-colors"
                 />
