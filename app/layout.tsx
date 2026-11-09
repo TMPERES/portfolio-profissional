@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     images: [
       {
-        url: 'https://portfolio-tadeuperes.vercel.app/og-image.jpg',
+        url: 'https://portfolio-tadeuperes.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Portfólio de Tadeu Peres',
